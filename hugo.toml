@@ -1,0 +1,16 @@
+baseURL = 'https://keorangi.com/'
+languageCode = 'en-us'
+title = 'keorangi'
+theme = "Nightfall"
+
+[params]
+author = "keorangi"
+user = "kea"
+hostname = "keorangi.com"
+
+[menu]
+  [[menu.header]]
+    name = "about"
+    weight = 1
+    url = "about"
+

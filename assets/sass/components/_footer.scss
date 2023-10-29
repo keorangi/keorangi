@@ -1,0 +1,14 @@
+@import "../utils/variables";
+
+.footer {
+  padding: 15px;
+  margin-right: 5px;
+  text-transform: uppercase;
+  text-align: right;
+  background-color: $backgroundDarker;
+  font-size: x-small;
+}
+
+.footerLink {
+  color: $white;
+}
