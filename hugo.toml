@@ -1,7 +1,7 @@
 baseURL = 'https://keorangi.com/'
 languageCode = 'en-us'
 title = 'keorangi'
-theme = "Nightfall"
+theme = "nightfall"
 
 [params]
 author = "keorangi"
