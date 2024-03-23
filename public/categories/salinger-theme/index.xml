@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Salinger Theme on crafting apps for the web | Keorangi</title>
+    <link>http://localhost:1313/categories/salinger-theme/</link>
+    <description>Recent content in Salinger Theme on crafting apps for the web | Keorangi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 23 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/salinger-theme/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Front Matter</title>
+      <link>http://localhost:1313/projects/frontmatter/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/frontmatter/</guid>
+      <description>🔥 read the update wiki on the github wiki section&#xA;Global Config Besides to Hugo Global config there are some more variables that can be used in config.toml.&#xA;Site Params # Optional Footer copyright = &amp;#39;Name&amp;#39; [params] # True if the header must appears also in the homepage (default: True) showHeaderOnHomepage = true # Google Analytics G-Tag (optional) googleAnalytics = &amp;#34;G-XX00000&amp;#34; # True if you want to use Twemoji (optional) twemoji = true # Optional text for 404 text.</description>
+    </item>
+    <item>
+      <title>Tweemoji Support</title>
+      <link>http://localhost:1313/blog/emoji-support/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/emoji-support/</guid>
+      <description>Emoji can be enabled in a Hugo project in a number of ways. In this theme, you can use Twemoji kit simply writing emoji and then adding this param in the config.toml file.&#xA;twemoji = true More info in the theme wiki on Github.</description>
+    </item>
+  </channel>
+</rss>
