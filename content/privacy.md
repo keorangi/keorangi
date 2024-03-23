@@ -12,3 +12,5 @@ draft = false
 Essentially, we will track your usage on this site.  
 We will use that information to undertand you better.  
 We will further try to make the site more aligned to more of you.  
+
+You use this site in agreement to the above.
