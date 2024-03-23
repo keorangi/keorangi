@@ -1,13 +1,26 @@
 {
-  "dependencies": {
-    "package.json": "^2.0.1",
-    "postcss-cli": "^11.0.0"
+  "comments": {
+    "dependencies": {},
+    "devDependencies": {
+      "@tailwindcss/typography": "salinger",
+      "autoprefixer": "salinger",
+      "daisyui": "salinger",
+      "postcss": "salinger",
+      "postcss-cli": "salinger",
+      "postcss-import": "salinger",
+      "tailwindcss": "salinger"
+    }
   },
+  "dependencies": {},
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.10",
-    "autoprefixer": "^10.4.19",
-    "daisyui": "^4.7.3",
-    "postcss": "^8.4.38",
-    "tailwindcss": "^3.4.1"
-  }
+    "@tailwindcss/typography": "^0.5.9",
+    "autoprefixer": "^10.4.14",
+    "daisyui": "^3.2.1",
+    "postcss": "^8.4.25",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "tailwindcss": "^3.3.2"
+  },
+  "name": "keo",
+  "version": "0.1.0"
 }
