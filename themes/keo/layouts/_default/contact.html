@@ -5,7 +5,16 @@
     </header>
     
     <section class="text-keo-very-dark-gray mb-8">
-        {{ .Content }}
+        <div class="page-content">
+            {{ .Content }} 
+        </div>
+
+        <!-- Bluesky Feed Section -->
+        <section class="bluesky-feed mt-12 pt-8 border-t border-keo-light-gray dark:border-keo-dark-gray">
+            <h2 class="text-2xl font-semibold text-keo-dark-gray dark:text-keo-light-gray mb-6 text-center">Latest from Bluesky</h2>
+            <bsky-embed username="keorangi.bsky.social" limit="5"></bsky-embed>
+        </section>
+        <!-- End Bluesky Feed Section -->
     </section>
 
     {{ if .Site.Params.googleFormUrl }}
@@ -26,4 +35,7 @@
     {{ end }}
 
 </article>
+
+<!-- Add the bsky-embed script -->
+<script src="https://cdn.jsdelivr.net/npm/bsky-embed@0.0.5/dist/bsky-embed.es.js" async></script>
 {{ end }}

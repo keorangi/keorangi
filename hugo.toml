@@ -29,7 +29,7 @@ theme = "keo"
   googleAnalytics = "" # Add your Google Analytics G-XXXXXXXXXX ID here
 
   # Social Media Links
-  bluesky = "" # Your Bluesky profile URL e.g. https://bsky.app/profile/yourhandle.bsky.social
+  bluesky = "https://bsky.app/profile/keorangi.bsky.social" # Your Bluesky profile URL e.g. https://bsky.app/profile/yourhandle.bsky.social
   mastodon = "" # Your Mastodon profile URL e.g. https://mastodon.social/@yourhandle
   googleFormUrl = "" # Your Google Form embed URL e.g. https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true
 
