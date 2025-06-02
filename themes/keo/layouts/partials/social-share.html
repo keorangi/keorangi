@@ -1,0 +1,11 @@
+<div class="social-share">
+  <h4 style="margin-bottom: 0.5em; font-size: 0.9em; color: #666;">Share:</h4>
+  <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.75em;">
+    <li><a href="https://twitter.com/intent/tweet?url={{ .Permalink }}&text={{ .Title | urlquery }}" target="_blank" rel="noopener" style="text-decoration: none; font-size: 0.85em;">X/Twitter</a></li>
+    <li><a href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink }}" target="_blank" rel="noopener" style="text-decoration: none; font-size: 0.85em;">LinkedIn</a></li>
+    <li><a href="https://news.ycombinator.com/submitlink?u={{ .Permalink }}&t={{ .Title | urlquery }}" target="_blank" rel="noopener" style="text-decoration: none; font-size: 0.85em;">Hacker News</a></li>
+    <li><a href="https://www.reddit.com/submit?url={{ .Permalink }}&title={{ .Title | urlquery }}" target="_blank" rel="noopener" style="text-decoration: none; font-size: 0.85em;">Reddit</a></li>
+    <li><a href="mailto:?subject={{ .Title | urlquery }}&body={{ .Permalink | urlquery }}" style="text-decoration: none; font-size: 0.85em;">Email</a></li>
+    <li><a href="{{ .Permalink }}" onclick="event.preventDefault(); navigator.clipboard.writeText('{{ .Permalink }}').then(() => { alert('Link copied!'); }).catch(err => { console.error('Failed to copy: ', err); alert('Failed to copy link.'); });" style="text-decoration: none; font-size: 0.85em;">Copy Link</a></li>
+  </ul>
+</div>

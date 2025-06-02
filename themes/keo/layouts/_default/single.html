@@ -32,5 +32,11 @@
         </p>
     </footer>
     {{ end }}
+
+    {{/* Add the social sharing links here */}}
+    <div class="mt-8"> {{/* Added a little top margin for spacing */}}
+        {{ partial "social-share.html" . }}
+    </div>
+
 </article>
 {{ end }}
