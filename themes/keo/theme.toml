@@ -8,5 +8,5 @@ features = ["tailwind css", "minimalist design", "typography focused"]
 min_version = "0.90.0"
 
 [author]
-  name = "Your Name"
+  name = "P Abraham"
   homepage = "https://yourwebsite.com" # TODO: Update with your details
