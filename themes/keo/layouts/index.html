@@ -6,9 +6,8 @@
 <div class="mt-12">
     <h2 class="text-2xl font-bold text-neutral-900 mb-6">Latest Posts</h2>
     <ul class="space-y-8">
-        {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections | default (where .Site.RegularPages "Type" "post") }}
+        {{ $pages := where .Site.RegularPages "Type" "in" (slice "post" "snip") }}
         {{ range first 5 $pages.ByDate.Reverse }}
-            {{ if ne .Layout "snip" }}
             <li>
                 <article>
                     <h3 class="text-xl font-semibold mb-1">
@@ -30,7 +29,6 @@
                     {{ end }}
                 </article>
             </li>
-            {{ end }}
         {{ end }}
     </ul>
     {{ if gt (len $pages) 5 }}

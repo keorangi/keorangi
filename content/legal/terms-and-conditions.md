@@ -6,7 +6,7 @@ draft: false
 
 ## Preamble
 
-Welcome to Keorangi. These terms and conditions outline the rules and regulations for the use of Keorangi's Website, located at [Your Website URL - e.g., https://www.keorangi.nz].
+Welcome to Keorangi. These terms and conditions outline the rules and regulations for the use of Keorangi's Website, located at https://keorangi.com.
 
 By accessing this website we assume you accept these terms and conditions. Do not continue to use Keorangi if you do not agree to take all of the terms and conditions stated on this page.
 
@@ -67,4 +67,4 @@ These Terms will be governed by and interpreted in accordance with the laws of N
 
 ## Disclaimer
 
-**Please note:** This is a sample Terms and Conditions page and may not be suitable for all websites. It is recommended that you consult with a legal professional to ensure your terms and conditions are appropriate for your specific needs and comply with all applicable laws and regulations. You should replace `[Your Website URL - e.g., https://www.keorangi.nz]` with your actual website URL.
+**Please note:** This is a sample Terms and Conditions page and may not be suitable for all websites. It is recommended that you consult with a legal professional to ensure your terms and conditions are appropriate for your specific needs and comply with all applicable laws and regulations. Ensure this URL is correct and consult with a legal professional to ensure your terms and conditions are appropriate for your specific needs and comply with all applicable laws and regulations.
