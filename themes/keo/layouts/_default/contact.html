@@ -1,0 +1,29 @@
+{{ define "main" }}
+<article class="prose lg:prose-xl max-w-none mx-auto py-8 px-4 bg-keo-light-gray text-keo-very-dark-gray rounded-lg shadow">
+    <header class="mb-8 text-center">
+        <h1 class="text-4xl font-bold text-keo-near-black">{{ .Title }}</h1>
+    </header>
+    
+    <section class="text-keo-very-dark-gray mb-8">
+        {{ .Content }}
+    </section>
+
+    {{ if .Site.Params.googleFormUrl }}
+    <section class="google-form-container aspect-w-16 aspect-h-9 lg:aspect-h-12 xl:aspect-h-10">
+        <iframe 
+            src="{{ .Site.Params.googleFormUrl }}" 
+            width="100%" 
+            height="800" {{/* Adjust height as needed, or use CSS for responsive height */}}
+            frameborder="0" 
+            marginheight="0" 
+            marginwidth="0"
+            class="w-full h-full"
+            title="Contact Form">
+            Loading…
+        </iframe>
+    </section>
+    {{/* No else block, so nothing shows if googleFormUrl is not set */}}
+    {{ end }}
+
+</article>
+{{ end }}

@@ -1,0 +1,21 @@
+<header class="bg-keo-white text-keo-near-black py-4 border-b border-keo-light-gray">
+    <div class="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center">
+        <div class="text-2xl font-bold mb-4 sm:mb-0 font-title">
+            <a href="{{ .Site.BaseURL | relLangURL }}" class="hover:text-keo-very-dark-gray transition-colors duration-300">{{ .Site.Title }}</a>
+        </div>
+        <nav>
+            <ul class="flex flex-wrap justify-center sm:justify-end space-x-2 sm:space-x-4">
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.main.ByWeight }}
+                    <li>
+                        <a href="{{ .URL | relLangURL }}" 
+                           class="text-keo-very-dark-gray hover:text-keo-near-black transition-colors duration-300 px-3 py-2 rounded-md text-base font-medium 
+                                  {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}font-semibold text-keo-near-black{{ else }}hover:text-keo-near-black{{ end }}">
+                            {{ .Name }}
+                        </a>
+                    </li>
+                {{ end }}
+            </ul>
+        </nav>
+    </div>
+</header>

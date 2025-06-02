@@ -1,0 +1,52 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = "Keorangi"
+theme = "keo"
+
+[[menu.main]]
+  name = "Blog"
+  pageRef = "/posts"
+  weight = 20
+
+[[menu.main]]
+  name = "Now"
+  pageRef = "/snips"
+  weight = 30
+
+[[menu.main]]
+  name = "About"
+  pageRef = "/about"
+  weight = 40
+
+[[menu.main]]
+  name = "Contact"
+  pageRef = "/contact"
+  weight = 50
+
+[params]
+  description = "Keorangi. Named for the Kea, New Zealand's alpine parrot, a bird known for its remarkable inquisitiveness and clever problem-solving. We're a small workshop focused on digital craftsmanship, building thoughtful web applications and tools with care and precision."
+  defaultImage = "images/site-og-image.png" # Path relative to static folder, e.g. static/images/site-og-image.png
+  googleAnalytics = "" # Add your Google Analytics G-XXXXXXXXXX ID here
+
+  # Social Media Links
+  bluesky = "" # Your Bluesky profile URL e.g. https://bsky.app/profile/yourhandle.bsky.social
+  mastodon = "" # Your Mastodon profile URL e.g. https://mastodon.social/@yourhandle
+  googleFormUrl = "" # Your Google Form embed URL e.g. https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true
+
+[markup.goldmark.renderer]
+  unsafe = true # Allows raw HTML in markdown, useful for some Tailwind use cases if needed
+
+[build]
+  writeStats = true # Needed for Hugo Pipes to process Tailwind CSS
+  writeRobotsTXT = true
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  term = ["HTML", "RSS"]
+
+[build.processing]
+  [build.processing.postcss]
+    use = "postcss-cli" # Explicitly use postcss-cli
+    # noTempFile = false # Default is false, can be true if issues persist

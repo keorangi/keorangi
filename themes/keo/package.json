@@ -1,0 +1,18 @@
+{
+  "name": "keo-hugo-theme",
+  "version": "0.1.0",
+  "description": "Tailwind CSS setup for Keo Hugo theme",
+  "scripts": {
+    "build": "hugo --minify",
+    "build:css": "tailwindcss -i ./assets/css/main.css -o ./static/css/style.css --minify",
+    "watch:css": "tailwindcss -i ./assets/css/main.css -o ./static/css/style.css --watch",
+    "dev": "hugo server -D --disableFastRender"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.13",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.3"
+  }
+}

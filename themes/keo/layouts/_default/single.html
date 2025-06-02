@@ -1,0 +1,36 @@
+{{ define "main" }}
+<article class="prose prose-neutral max-w-none">
+    <header class="mb-8">
+        <h1 class="text-4xl font-bold text-neutral-900 mb-2">{{ .Title }}</h1>
+        <p class="text-base text-neutral-500">
+            <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "Published on January 2, 2006" }}</time>
+            {{ if .Params.categories }}
+                <span class="mx-1">&middot;</span>
+                <span>Categories:</span>
+                {{ range $idx, $category := .Params.categories }}
+                    {{ if $idx }}, {{ end }}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="hover:text-sky-600">{{ . }}</a>
+                {{ end }}
+            {{ end }}
+            {{ if not .Params.disableReadingTime }}
+                <span class="mx-1">&middot;</span>
+                <span>{{ .ReadingTime }} min read</span>
+            {{ end }}
+        </p>
+    </header>
+
+    <div class="content">
+        {{ .Content }}
+    </div>
+
+    {{ if .Params.tags }}
+    <footer class="mt-12 pt-6 border-t border-neutral-200">
+        <p class="text-sm text-neutral-600">
+            Tags: 
+            {{ range $idx, $tag := .Params.tags }}
+                {{ if $idx }}, {{ end }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="bg-neutral-100 hover:bg-neutral-200 text-neutral-700 px-2 py-1 rounded text-xs font-medium">#{{ . }}</a>
+            {{ end }}
+        </p>
+    </footer>
+    {{ end }}
+</article>
+{{ end }}

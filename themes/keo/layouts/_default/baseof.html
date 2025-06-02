@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{ partial "seo_meta.html" . }}
+    <link rel="icon" href="{{ "/images/keorangi-logo-color.svg" | relURL }}" type="image/svg+xml">
+    
+    <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    {{ partial "google_analytics.html" . }}
+
+    {{ block "head" . }}{{ end }}
+</head>
+<body class="bg-white text-neutral-800 font-sans antialiased flex flex-col min-h-screen">
+    {{ block "header" . }}
+        {{ partial "header.html" . }}
+    {{ end }}
+
+    <main class="flex-grow container mx-auto px-4 py-8 max-w-3xl">
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    {{ block "footer" . }}
+        {{ partial "footer.html" . }}
+    {{ end }}
+</body>
+</html>

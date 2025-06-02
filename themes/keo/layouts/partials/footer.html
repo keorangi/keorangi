@@ -1,0 +1,55 @@
+<footer class="bg-keo-medium-gray text-keo-dark-gray py-12 mt-auto text-sm">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <!-- Column 1: About Site -->
+            <div class="md:col-span-1 group">
+                <div class="flex items-start">
+                    <img src="{{ "images/keorangi-logo-color.svg" | relURL }}" alt="{{ $.Site.Title }} Logo" 
+                         class="w-12 h-auto filter grayscale group-hover:grayscale-0 transition-all duration-300 mr-6 flex-shrink-0" 
+                         style="width: 48px !important; height: auto !important;">
+                    <div> 
+                        <h4 class="text-base font-semibold text-keo-near-black mb-1">{{ .Site.Title }}</h4>
+                        {{ with .Site.Params.description }}
+                            <p class="text-keo-very-dark-gray leading-relaxed">{{ . }}</p>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="text-center md:text-left">
+                <h4 class="text-base font-semibold text-keo-near-black mb-3">Quick Links</h4>
+                <ul class="space-y-2">
+                    {{ range .Site.Menus.main.ByWeight }}
+                        <li>
+                            <a href="{{ .URL | relLangURL }}" class="hover:text-keo-near-black hover:underline transition-colors duration-200">{{ .Name }}</a>
+                        </li>
+                    {{ end }}
+                </ul>
+            </div>
+
+            <!-- Column 3: Connect & Legal -->
+            <div class="text-center md:text-left">
+                <h4 class="text-base font-semibold text-keo-near-black mb-3">Connect</h4>
+                <ul class="space-y-2 mb-4">
+                    {{ with .Site.Params.bluesky }}
+                        <li><a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="hover:text-keo-near-black hover:underline transition-colors duration-200">Bluesky</a></li>
+                    {{ end }}
+                    {{ with .Site.Params.mastodon }}
+                        <li><a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="hover:text-keo-near-black hover:underline transition-colors duration-200">Mastodon</a></li>
+                    {{ end }}
+                    {{/* Add other social links here */}}
+                </ul>
+                <h4 class="text-base font-semibold text-keo-near-black mb-3">Legal</h4>
+            </div>
+
+        </div>
+
+        <!-- New Copyright Section -->
+        <div class="mt-8 pt-8 border-t border-keo-dark-gray/20 text-center">
+            <p class="text-xs text-keo-very-dark-gray">&copy; {{ now.Format "2006" }} {{ .Site.Title }}. All rights reserved.</p>
+        </div>
+
+    </div>
+</footer>

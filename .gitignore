@@ -1,0 +1,43 @@
+# Hugo
+public/
+resources/
+.hugo_build.lock
+
+# Static assets not committed (if any, like large media files managed elsewhere)
+# static/assets/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Node.js (especially if you were to have a package.json in the root, or for general dev)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor/IDE specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Hugo server logs or temp files (if any were to be created)
+*.log
+
+# Environment variables file (if you use one)
+.env
+
+# Sass cache
+.sass-cache/
+
+# If you use Netlify Dev
+.netlify/
+
+# If you use Hugo Modules cache
+.hugo_cache/

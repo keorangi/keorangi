@@ -1,0 +1,12 @@
+name = "Keo"
+license = "MIT"
+licenselink = "https://github.com/yourusername/keo/blob/main/LICENSE" # TODO: Update with actual link when you host it
+description = "A minimalist Hugo theme with a focus on clean text, typography, and Tailwind CSS."
+homepage = "https://github.com/yourusername/keo/" # TODO: Update with actual link
+tags = ["minimalist", "blog", "clean", "tailwind", "responsive", "typography"]
+features = ["tailwind css", "minimalist design", "typography focused"]
+min_version = "0.90.0"
+
+[author]
+  name = "Your Name"
+  homepage = "https://yourwebsite.com" # TODO: Update with your details

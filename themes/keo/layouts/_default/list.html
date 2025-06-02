@@ -1,0 +1,36 @@
+{{ define "main" }}
+<div class="prose prose-neutral max-w-none">
+    <h1 class="text-3xl font-bold mb-8">{{ .Title }}</h1>
+
+    {{ .Content }}
+
+    <ul class="space-y-6">
+        {{ range .Pages.ByDate.Reverse }}
+            {{ if ne .Layout "snip" }} {{/* Exclude 'snip' type from generic lists if desired */}}
+            <li>
+                <article>
+                    <h2 class="text-2xl font-semibold mb-1">
+                        <a href="{{ .RelPermalink }}" class="hover:text-sky-700 transition-colors">{{ .Title }}</a>
+                    </h2>
+                    <p class="text-sm text-neutral-500 mb-2">
+                        <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "January 2, 2006" }}</time>
+                        {{ if .Params.categories }}
+                            <span class="mx-1">&middot;</span>
+                            {{ range .Params.categories }}
+                                <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="hover:text-sky-600">#{{ . }}</a> 
+                            {{ end }}
+                        {{ end }}
+                    </p>
+                    {{ if .Summary }}
+                        <p class="text-neutral-700 leading-relaxed">{{ .Summary }}</p>
+                    {{ else if .Plain }}
+                         <p class="text-neutral-700 leading-relaxed">{{ .Plain | truncate 150 }}</p>
+                    {{ end }}
+                    <a href="{{ .RelPermalink }}" class="text-sky-600 hover:text-sky-700 font-medium text-sm">Read more &rarr;</a>
+                </article>
+            </li>
+            {{ end }}
+        {{ end }}
+    </ul>
+</div>
+{{ end }}
