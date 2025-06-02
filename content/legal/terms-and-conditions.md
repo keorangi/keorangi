@@ -64,7 +64,3 @@ Keorangi is permitted to revise these Terms at any time as it sees fit, and by u
 ## Governing Law & Jurisdiction
 
 These Terms will be governed by and interpreted in accordance with the laws of New Zealand, and you submit to the non-exclusive jurisdiction of the state and federal courts located in New Zealand for the resolution of any disputes.
-
-## Disclaimer
-
-**Please note:** This is a sample Terms and Conditions page and may not be suitable for all websites. It is recommended that you consult with a legal professional to ensure your terms and conditions are appropriate for your specific needs and comply with all applicable laws and regulations. Ensure this URL is correct and consult with a legal professional to ensure your terms and conditions are appropriate for your specific needs and comply with all applicable laws and regulations.
