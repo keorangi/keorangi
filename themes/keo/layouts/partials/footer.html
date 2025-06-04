@@ -5,8 +5,10 @@
             <!-- Column 1: About Site -->
             <div class="md:col-span-1 group">
                 <div class="flex items-start">
-                    <img src="{{ "images/keorangi-logo-color.svg" | relURL }}" alt="{{ $.Site.Title }} Logo" 
-                         class="!w-12 h-auto filter grayscale group-hover:grayscale-0 transition-all duration-300 mr-6 flex-shrink-0">
+                    <a href="{{ "/" | relURL }}" aria-label="Homepage" class="mr-6 flex-shrink-0">
+                        <img src="{{ "images/keorangi-logo-color.svg" | relURL }}" alt="{{ $.Site.Title }} Logo" 
+                             class="!w-12 h-auto filter grayscale group-hover:grayscale-0 transition-all duration-300">
+                    </a>
                     <div> 
                         <h4 class="text-base font-semibold text-keo-near-black mb-1">{{ .Site.Title }}</h4>
                         {{ with .Site.Params.description }}
