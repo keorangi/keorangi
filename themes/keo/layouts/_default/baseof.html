@@ -6,12 +6,13 @@
     {{ partial "seo_meta.html" . }}
     <link rel="icon" href="{{ "/images/keorangi-logo-color.svg" | relURL }}" type="image/svg+xml">
     
-    <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
+    {{ $cssOptions := (dict "targetPath" "css/style.css" "enableSourceMap" (not hugo.IsProduction) ) }}
+    {{ $styles := resources.Get "css/main.css" | resources.PostCSS $cssOptions | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400&family=Montserrat:wght@400&family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400&family=Montserrat:wght@400&family=Playfair+Display:wght@400&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
     {{ partial "google_analytics.html" . }}
 

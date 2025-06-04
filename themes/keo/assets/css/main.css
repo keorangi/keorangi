@@ -77,3 +77,23 @@ main, header, footer {
 }
 
 /* Add any additional global styles or component classes here */
+
+/* Custom styles for social share component */
+.social-share-title {
+  @apply mb-2 text-sm;
+  color: #666; /* Consider mapping to a Tailwind theme color e.g., text-gray-500 */
+  /* Original: margin-bottom: 0.5em; font-size: 0.9em; */
+}
+
+.social-share-list {
+  @apply list-none p-0 m-0 flex flex-wrap;
+  gap: 0.75em; /* Tailwind 'gap-3' is 0.75rem, might be equivalent if base font is 16px */
+  /* Original: list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.75em; */
+}
+
+.social-share-link {
+  @apply no-underline;
+  font-size: 0.85em; /* Consider mapping to Tailwind's text-xs or text-sm if appropriate */
+  /* Original: text-decoration: none; font-size: 0.85em; */
+  /* Inherits color and hover effects from global 'a' styles unless overridden here. */
+}
