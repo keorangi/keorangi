@@ -38,7 +38,6 @@
       "bg-keo-medium-gray",
       "bg-keo-white",
       "bg-neutral-100",
-      "bg-white",
       "border-b",
       "border-keo-dark-gray/20",
       "border-keo-light-gray",
@@ -56,7 +55,6 @@
       "flex-wrap",
       "font-bold",
       "font-medium",
-      "font-sans",
       "font-semibold",
       "font-title",
       "gap-6",
@@ -143,7 +141,6 @@
     ],
     "ids": [
       "code-blocks",
-      "disclaimer",
       "governing-law--jurisdiction",
       "indemnification",
       "intellectual-property-rights--content-licensing",
