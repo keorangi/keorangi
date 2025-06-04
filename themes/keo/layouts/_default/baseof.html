@@ -7,7 +7,7 @@
     <link rel="icon" href="{{ "/images/keorangi-logo-color.svg" | relURL }}" type="image/svg+xml">
     
     {{ $cssOptions := (dict "targetPath" "css/style.css" "enableSourceMap" (not hugo.IsProduction) ) }}
-    {{ $styles := resources.Get "css/main.css" | resources.PostCSS $cssOptions | resources.Minify | resources.Fingerprint }}
+    {{ $styles := resources.Get "css/main.css" | css.PostCSS $cssOptions | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">

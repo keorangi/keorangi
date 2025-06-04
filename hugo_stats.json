@@ -34,6 +34,7 @@
       "ul"
     ],
     "classes": [
+      "!w-12",
       "antialiased",
       "bg-keo-medium-gray",
       "bg-keo-white",
@@ -114,6 +115,9 @@
       "sm:mb-0",
       "sm:space-x-4",
       "social-share",
+      "social-share-link",
+      "social-share-list",
+      "social-share-title",
       "space-x-2",
       "space-y-2",
       "space-y-6",
@@ -136,8 +140,7 @@
       "text-xl",
       "text-xs",
       "transition-all",
-      "transition-colors",
-      "w-12"
+      "transition-colors"
     ],
     "ids": [
       "code-blocks",

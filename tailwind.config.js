@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './layouts/**/*.html',
+    './themes/keo/layouts/**/*.html',
+    './layouts/**/*.html', // For project-level layouts
     './content/**/*.md',
-    '../../content/**/*.md', // To scan site-level content files
-    './archetypes/**/*.md',
+    './themes/keo/archetypes/**/*.md',
   ],
   theme: {
     extend: {
